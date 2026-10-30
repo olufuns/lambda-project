@@ -1,0 +1,51 @@
+# Terraform working directories and local state (may contain sensitive data)
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfplan
+tfplan
+.terraform.tfstate.lock.hcl
+crash.log
+crash.*.log
+*.tfvars
+*.tfvars.json
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Keep .terraform.lock.hcl committed: it locks exact provider versions.
+
+# Python caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+
+# Local build, credentials and editor files
+lambda_package.zip
+.env
+.env.*
+*.pem
+*.key
+.aws/
+.vscode/
+.idea/
+.DS_Store
+# Generated Lambda deployment package
+lambda_package.zip
+
+# Temporary Terraform state lock
+.terraform.tfstate.lock.info
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Local environment and credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.keycd
